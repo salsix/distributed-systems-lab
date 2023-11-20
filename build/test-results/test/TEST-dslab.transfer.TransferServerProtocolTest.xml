@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.transfer.TransferServerProtocolTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:07:45" hostname="leonardo" time="6.012">
+  <properties/>
+  <testcase name="defaultDmtpInteractionTest" classname="dslab.transfer.TransferServerProtocolTest" time="3.007"/>
+  <testcase name="sendWithoutRecipient_returnsErrorOnSend" classname="dslab.transfer.TransferServerProtocolTest" time="3.005"/>
+  <system-out><![CDATA[TransferListenerThread: Client connected Socket[addr=/127.0.0.1,port=53202,localport=13650]
+TransferListenerThread: Client connected Socket[addr=/127.0.0.1,port=53204,localport=13650]
+TransferClientConnection start Socket[addr=/127.0.0.1,port=53202,localport=13650]
+TransferClientConnection start Socket[addr=/127.0.0.1,port=53204,localport=13650]
+TransferListenerThread Socket exception: java.net.SocketException: Socket closed
+TransferListenerThread shutdown finished
+TransferSender start (hello: arthur@earth.planet)
+Send failed to mail 'arthur@earth.planet': Domain 'earth.planet' not found. 
+TransferSender finished. (hello: arthur@earth.planet)
+TransferClientConnection finished after waiting Socket[addr=/127.0.0.1,port=53204,localport=13650]
+TransferClientConnection finished Socket[addr=/127.0.0.1,port=53204,localport=13650]
+TransferListenerThread: Client connected Socket[addr=/127.0.0.1,port=53208,localport=13650]
+TransferClientConnection start Socket[addr=/127.0.0.1,port=53208,localport=13650]
+TransferListenerThread: Client connected Socket[addr=/127.0.0.1,port=53210,localport=13650]
+TransferClientConnection start Socket[addr=/127.0.0.1,port=53210,localport=13650]
+TransferListenerThread Socket exception: java.net.SocketException: Socket closed
+TransferListenerThread shutdown finished
+TransferClientConnection finished after waiting Socket[addr=/127.0.0.1,port=53210,localport=13650]
+TransferClientConnection finished Socket[addr=/127.0.0.1,port=53210,localport=13650]
+]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:07:45 PM dslab.transfer.TransferServerProtocolTest setUp
+INFO: Waiting for server socket to appear
+Jan 14, 2022 3:07:48 PM dslab.transfer.TransferServerProtocolTest setUp
+INFO: Waiting for server socket to appear
+]]></system-err>
+</testsuite>

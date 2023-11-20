@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.transfer.TransferServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:07:51" hostname="leonardo" time="3.004">
+  <properties/>
+  <testcase name="runAndShutdownTransferServer_createsAndStopsTcpSocketCorrectly" classname="dslab.transfer.TransferServerTest" time="3.004"/>
+  <system-out><![CDATA[TransferListenerThread: Client connected Socket[addr=/127.0.0.1,port=53212,localport=13650]
+TransferListenerThread Socket exception: java.net.SocketException: Socket closed
+TransferListenerThread shutdown finished
+invalid client
+]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:07:51 PM dslab.monitoring.MonitoringServerTest runAndShutdownTransferServer_createsAndStopsTcpSocketCorrectly
+INFO: Starting thread with component dslab.transfer.TransferServer@2aaf418e
+Jan 14, 2022 3:07:51 PM dslab.monitoring.MonitoringServerTest runAndShutdownTransferServer_createsAndStopsTcpSocketCorrectly
+INFO: Waiting for socket to open on port 13650
+Jan 14, 2022 3:07:51 PM dslab.monitoring.MonitoringServerTest runAndShutdownTransferServer_createsAndStopsTcpSocketCorrectly
+INFO: Shutting down component dslab.transfer.TransferServer@2aaf418e
+Jan 14, 2022 3:07:54 PM dslab.monitoring.MonitoringServerTest runAndShutdownTransferServer_createsAndStopsTcpSocketCorrectly
+INFO: Waiting for thread to stop for component dslab.transfer.TransferServer@2aaf418e
+]]></system-err>
+</testsuite>

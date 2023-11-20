@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.monitoring.MonitoringServerProtocolTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:06:43" hostname="leonardo" time="22.011">
+  <properties/>
+  <testcase name="servers_returnsCorrectStatistics" classname="dslab.monitoring.MonitoringServerProtocolTest" time="11.007"/>
+  <testcase name="addresses_returnsCorrectStatistics" classname="dslab.monitoring.MonitoringServerProtocolTest" time="11.004"/>
+  <system-out><![CDATA[SocketException while waiting for/handling packets: Socket closed
+SocketException while waiting for/handling packets: Socket closed
+]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:06:46 PM dslab.monitoring.MonitoringServerProtocolTest servers_returnsCorrectStatistics
+INFO: Sending three monitoring packets to monitoring socket
+Jan 14, 2022 3:06:57 PM dslab.monitoring.MonitoringServerProtocolTest addresses_returnsCorrectStatistics
+INFO: Sending three monitoring packets to monitoring socket
+]]></system-err>
+</testsuite>

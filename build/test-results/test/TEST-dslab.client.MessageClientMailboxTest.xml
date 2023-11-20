@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.client.MessageClientMailboxTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:07:31" hostname="leonardo" time="14.101">
+  <properties/>
+  <testcase name="inbox_mulipleMails_showsAllInboxDataCorrectly" classname="dslab.client.MessageClientMailboxTest" time="8.081"/>
+  <testcase name="inbox_singleMail_showsAllInboxDataCorrectly" classname="dslab.client.MessageClientMailboxTest" time="6.02"/>
+  <system-out><![CDATA[accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42596,localport=13652]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53636,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53636,localport=13653]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53638,localport=13653]
+Client Answer: BEBvop+ffXR+X8SPIvHiUIprfPhs1EDl/QBAQBi4lHCZ1TN2EeQJMWObkwAANW7V9KLTNcsm6iwjzzxEN72EFYHWYWmV/8qecV6f8G41Ynyzezh1sH3QRc36CKgt3glRD8zZbnrhBlOKhDZK21kqN9xIV8szAxVc77VUlejqw6kYCa9Kh7R4MjCCZqkCyQFZtnCbm47dSdZ/1yBO86zQO68i+bDTWB3NUTP71tBTrEiIDxzePVWyvl5h2FoJLpY94rFeXSANCdKasuCACOMActEL5VWkUlgdw+Po8fuYqBG+lXAjJiMhhulrOzsuo2034JKyPy7qYjq1Jkf2Wj8v1Q==
+RSA answer: ok Zb5sp25Bcj1FG2d0Q9HWkGZpWjixJDunflQdDiqyBHQ= pN2nIeOGn1wgXWfkKz/g6buB+TZKRSc9LFSifuXbspY= mOlO1kNTvzSYAJtS2ojGcw==
+ok Zb5sp25Bcj1FG2d0Q9HWkGZpWjixJDunflQdDiqyBHQ=
+should be ok: ok
+accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42598,localport=13652]
+Received Mail: dslab.util.Mail@8b4f591
+DmtpClientConnection finished Socket[addr=/127.0.0.1,port=42598,localport=13652]
+accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42600,localport=13652]
+Received Mail: dslab.util.Mail@3af73063
+DmtpClientConnection finished Socket[addr=/127.0.0.1,port=42600,localport=13652]
+accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42602,localport=13652]
+Received Mail: dslab.util.Mail@5fd13408
+DmtpClientConnection finished Socket[addr=/127.0.0.1,port=42602,localport=13652]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53638,localport=13653]
+MailboxDmtpListenerThread finished
+MailboxDmapListenerThread finished
+accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42608,localport=13652]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53640,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53640,localport=13653]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53642,localport=13653]
+Client Answer: ww2E9srcYjrG37SxjqiAlGvs7He2VxfgK0U6p/ANK5fNVLlQGwRHA2nF1SfgwbZYTkq8oZ3LUnix5QOcW68k99d3DwBXbH7ErEdaFiUF8AcR3kL3wEjT5XKR+mGBuIqfV31Ll8me3z7WspiR2jNVNGrJ8/YN0OMudtQTRg8U25jeQ0D3WGqlRMLdwks86EjxGEqzUd3rBq4zgk0pph7y1g1p+3916k5I0stGQ9E2ZYw51wFMp13nrqPYRlpGuoZknjw+wyqS9HS+fTnE+i38LhQzrt5veDdeB0egDqEZax0hTm7RmT5ymGQH6rjgUow7Oleejej3na0m27qqIi10ZQ==
+RSA answer: ok 9ApUXH8vNOWcdGhdDPRP8H9Q/LSAxTamr6qY/em3X/c= SyFwJZskZlGyDbzMneOk6P4IggOOhcS8frs3AQIxulc= 12YxMkfsYuOXPo1suUBXww==
+ok 9ApUXH8vNOWcdGhdDPRP8H9Q/LSAxTamr6qY/em3X/c=
+should be ok: ok
+accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42610,localport=13652]
+Received Mail: dslab.util.Mail@78fe8e4f
+DmtpClientConnection finished Socket[addr=/127.0.0.1,port=42610,localport=13652]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53642,localport=13653]
+MailboxDmtpListenerThread finished
+MailboxDmapListenerThread finished
+]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:07:31 PM dslab.client.MessageClientMailboxTest setUp
+INFO: Creating mailbox server
+Jan 14, 2022 3:07:31 PM dslab.client.MessageClientMailboxTest setUp
+INFO: Waiting for mailbox server sockets
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused (Connection refused)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at dslab.mailbox.MailboxServer.run(MailboxServer.java:75)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 6 more
+Jan 14, 2022 3:07:31 PM dslab.client.MessageClientMailboxTest setUp
+INFO: Starting message client
+Jan 14, 2022 3:07:39 PM dslab.client.MessageClientMailboxTest setUp
+INFO: Creating mailbox server
+Jan 14, 2022 3:07:39 PM dslab.client.MessageClientMailboxTest setUp
+INFO: Waiting for mailbox server sockets
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused (Connection refused)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at dslab.mailbox.MailboxServer.run(MailboxServer.java:75)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 6 more
+Jan 14, 2022 3:07:39 PM dslab.client.MessageClientMailboxTest setUp
+INFO: Starting message client
+]]></system-err>
+</testsuite>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.naming.NameserverTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:06:05" hostname="leonardo" time="38.144">
+  <properties/>
+  <testcase name="ns01_startAndShutdownRootNameserver_createsAndUnexportsRegistryCorrectly" classname="dslab.naming.NameserverTest" time="6.067"/>
+  <testcase name="ns02_startRootNameserver_registersRemoteObjectCorrectly" classname="dslab.naming.NameserverTest" time="6.047"/>
+  <testcase name="ns03_startingZoneNameserver_registersNameserverCorrectly" classname="dslab.naming.NameserverTest" time="13.018"/>
+  <testcase name="ns04_registerAndLookupMailboxServer_registersAndReturnsAddressCorrectly" classname="dslab.naming.NameserverTest" time="13.012"/>
+  <system-out><![CDATA[root setting up registry
+root setting up registry
+root setting up registry
+Registering Nameserver: planet
+root setting up registry
+Registering Nameserver: planet
+Registering Mailbox: mars.planet
+Registering Mailbox next: mars
+Registering Mailbox: mars
+]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:06:05 PM dslab.naming.NameserverTest ns01_startAndShutdownRootNameserver_createsAndUnexportsRegistryCorrectly
+INFO: Starting ns-root thread
+Jan 14, 2022 3:06:08 PM dslab.naming.NameserverTest sendShutdown
+INFO: Sending shutdown to component component
+Jan 14, 2022 3:06:11 PM dslab.naming.NameserverTest ns02_startRootNameserver_registersRemoteObjectCorrectly
+INFO: Starting ns-root thread
+Jan 14, 2022 3:06:14 PM dslab.naming.NameserverTest ns02_startRootNameserver_registersRemoteObjectCorrectly
+INFO: Looking up root-nameserver in registry
+Jan 14, 2022 3:06:14 PM dslab.naming.NameserverTest sendShutdown
+INFO: Sending shutdown to component component
+Jan 14, 2022 3:06:17 PM dslab.naming.NameserverTest ns03_startingZoneNameserver_registersNameserverCorrectly
+INFO: Starting ns-root thread
+Jan 14, 2022 3:06:20 PM dslab.naming.NameserverTest ns03_startingZoneNameserver_registersNameserverCorrectly
+INFO: Starting ns-planet thread
+Jan 14, 2022 3:06:23 PM dslab.naming.NameserverTest ns03_startingZoneNameserver_registersNameserverCorrectly
+INFO: Looking up root-nameserver in registry
+Jan 14, 2022 3:06:23 PM dslab.naming.NameserverTest ns03_startingZoneNameserver_registersNameserverCorrectly
+INFO: Getting nameserver 'planet' from server remote
+Jan 14, 2022 3:06:23 PM dslab.naming.NameserverTest ns03_startingZoneNameserver_registersNameserverCorrectly
+INFO: Sending 'nameservers' command
+Jan 14, 2022 3:06:24 PM dslab.naming.NameserverTest ns03_startingZoneNameserver_registersNameserverCorrectly
+INFO: Got output: ns-root> 1. planet
+Jan 14, 2022 3:06:24 PM dslab.naming.NameserverTest sendShutdown
+INFO: Sending shutdown to component component
+Jan 14, 2022 3:06:27 PM dslab.naming.NameserverTest sendShutdown
+INFO: Sending shutdown to component component
+Jan 14, 2022 3:06:30 PM dslab.naming.NameserverTest ns04_registerAndLookupMailboxServer_registersAndReturnsAddressCorrectly
+INFO: Starting ns-root thread
+Jan 14, 2022 3:06:33 PM dslab.naming.NameserverTest ns04_registerAndLookupMailboxServer_registersAndReturnsAddressCorrectly
+INFO: Starting ns-planet thread
+Jan 14, 2022 3:06:36 PM dslab.naming.NameserverTest ns04_registerAndLookupMailboxServer_registersAndReturnsAddressCorrectly
+INFO: Looking up root-nameserver in registry
+Jan 14, 2022 3:06:36 PM dslab.naming.NameserverTest ns04_registerAndLookupMailboxServer_registersAndReturnsAddressCorrectly
+INFO: Registering mailbox server for @mars.planet mail domain
+Jan 14, 2022 3:06:37 PM dslab.naming.NameserverTest ns04_registerAndLookupMailboxServer_registersAndReturnsAddressCorrectly
+INFO: Looking up 'mars' at nameserver planet
+Jan 14, 2022 3:06:37 PM dslab.naming.NameserverTest sendShutdown
+INFO: Sending shutdown to component component
+Jan 14, 2022 3:06:40 PM dslab.naming.NameserverTest sendShutdown
+INFO: Sending shutdown to component component
+]]></system-err>
+</testsuite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.client.MessageClientStartupTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:07:31" hostname="leonardo" time="0.017">
+  <properties/>
+  <testcase name="startClient_shouldConnectToMailboxServerAndSendStartsecure" classname="dslab.client.MessageClientStartupTest" time="0.017"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer run
+INFO: Starting mock server on 13653
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer run
+INFO: Listening on client connection
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer run
+INFO: Processing client connection Socket[addr=/127.0.0.1,port=53632,localport=13653]
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer run
+INFO: Listening on client connection
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer run
+INFO: Processing client connection Socket[addr=/127.0.0.1,port=53634,localport=13653]
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer close
+INFO: Closing server socket
+Exception in thread "Thread-40" java.lang.NullPointerException
+	at dslab.client.MessageClient.run(MessageClient.java:66)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer run
+INFO: Listening on client connection
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer close
+INFO: Closing server socket
+Jan 14, 2022 3:07:31 PM dslab.SimpleTcpServer close
+INFO: Closing server socket
+]]></system-err>
+</testsuite>

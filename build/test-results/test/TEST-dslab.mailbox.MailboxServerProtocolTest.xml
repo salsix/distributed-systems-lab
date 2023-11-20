@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dslab.mailbox.MailboxServerProtocolTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-01-14T14:07:11" hostname="leonardo" time="13.074">
+  <properties/>
+  <testcase name="acceptDmtpMessage_listDmapMessage" classname="dslab.mailbox.MailboxServerProtocolTest" time="4.027"/>
+  <testcase name="loginAndLogout_withValidLogin" classname="dslab.mailbox.MailboxServerProtocolTest" time="3.017"/>
+  <testcase name="dmtpMessage_withUnknownRecipient_returnsError" classname="dslab.mailbox.MailboxServerProtocolTest" time="3.016"/>
+  <testcase name="login_withInvalidLogin_returnsError" classname="dslab.mailbox.MailboxServerProtocolTest" time="3.014"/>
+  <system-out><![CDATA[accepted client
+accepted client
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42570,localport=13652]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53600,localport=13653]
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42572,localport=13652]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53600,localport=13653]
+Received Mail: dslab.util.Mail@7ff2bacc
+DmtpClientConnection finished Socket[addr=/127.0.0.1,port=42572,localport=13652]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53602,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53602,localport=13653]
+MailboxDmtpListenerThread finished
+MailboxDmapListenerThread finished
+accepted client
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53606,localport=13653]
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42576,localport=13652]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53608,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53606,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53608,localport=13653]
+MailboxDmtpListenerThread finished
+MailboxDmapListenerThread finished
+accepted client
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53612,localport=13653]
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42578,localport=13652]
+accepted client
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53612,localport=13653]
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42582,localport=13652]
+error unknown recipient unknown
+DmtpClientConnection finished Socket[addr=/127.0.0.1,port=42582,localport=13652]
+MailboxDmtpListenerThread finished
+MailboxDmapListenerThread finished
+accepted client
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53618,localport=13653]
+DmtpClientConnection start Socket[addr=/127.0.0.1,port=42584,localport=13652]
+DmapClientConnection start Socket[addr=/127.0.0.1,port=53620,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53618,localport=13653]
+DmapClientConnection finished Socket[addr=/127.0.0.1,port=53620,localport=13653]
+MailboxDmtpListenerThread finished
+MailboxDmapListenerThread finished
+]]></system-out>
+  <system-err><![CDATA[Jan 14, 2022 3:07:11 PM dslab.mailbox.MailboxServerProtocolTest setUp
+INFO: Waiting for server sockets to appear
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused (Connection refused)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at dslab.mailbox.MailboxServer.run(MailboxServer.java:75)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 6 more
+Jan 14, 2022 3:07:15 PM dslab.mailbox.MailboxServerProtocolTest setUp
+INFO: Waiting for server sockets to appear
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused (Connection refused)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at dslab.mailbox.MailboxServer.run(MailboxServer.java:75)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 6 more
+Jan 14, 2022 3:07:18 PM dslab.mailbox.MailboxServerProtocolTest setUp
+INFO: Waiting for server sockets to appear
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused (Connection refused)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at dslab.mailbox.MailboxServer.run(MailboxServer.java:75)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 6 more
+Jan 14, 2022 3:07:21 PM dslab.mailbox.MailboxServerProtocolTest setUp
+INFO: Waiting for server sockets to appear
+java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused (Connection refused)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:623)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.createConnection(TCPChannel.java:209)
+	at java.rmi/sun.rmi.transport.tcp.TCPChannel.newConnection(TCPChannel.java:196)
+	at java.rmi/sun.rmi.server.UnicastRef.newCall(UnicastRef.java:343)
+	at java.rmi/sun.rmi.registry.RegistryImpl_Stub.lookup(RegistryImpl_Stub.java:116)
+	at dslab.mailbox.MailboxServer.run(MailboxServer.java:75)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at java.rmi/sun.rmi.transport.tcp.TCPDirectSocketFactory.createSocket(TCPDirectSocketFactory.java:40)
+	at java.rmi/sun.rmi.transport.tcp.TCPEndpoint.newSocket(TCPEndpoint.java:617)
+	... 6 more
+]]></system-err>
+</testsuite>
