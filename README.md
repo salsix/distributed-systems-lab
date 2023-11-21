@@ -1,5 +1,6 @@
-distributed systems lab
-=======================
+# Course Project Distributed Systems: Messaging System and Protocols
+
+We developed a messaging system consisting of transfer servers, mailbox servers, monitoring servers, a decentralized naming service and secure communication protocols over TCP/UDP. Among the tools we used were the Java Concurrency API, Java Remote Method Invocation, and the Java Cryptography API.
 
 Using gradle
 ------------
